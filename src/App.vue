@@ -7,13 +7,12 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style>
-/* Global sıfırlama ayarları kalsın */
 html, body, #app {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #1e1e1e; /* Arka plan hep koyu kalsın */
+  background-color: #1e1e1e; 
   font-family: sans-serif;
   overflow: hidden; 
 }
