@@ -1,38 +1,36 @@
-# password-auth
+# Kullanıcı Giriş Sistemi (Vue 3 + TypeScript + Node.js)
 
-This template should help get you started developing with Vue 3 in Vite.
+Bu proje, bir kullanıcının kayıt olabileceği, giriş yapabileceği ve sadece giriş yaptığında görebileceği bir Main sayfasından oluşan tam kapsamlı bir web uygulamasıdır.
 
-## Recommended IDE Setup
+## Projenin Özellikleri:
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Frontend: Vue 3 ve TypeScript kullanılarak geliştirildi.
 
-## Recommended Browser Setup
+- Backend: Node.js ve Express.js ile bir API oluşturuldu.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Veritabanı: Kullanıcılar backend/private/users.json dosyasında saklanır.
 
-## Customize configuration
+- Güvenlik: Giriş yapmayan kullanıcıların ana sayfaya erişimi engellenir.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Tasarım: Modern, koyu tema kullanıldı.
 
-## Project Setup
+## Kurulum ve Çalıştırma:
 
-```sh
-pnpm install
-```
+1- Adım: Projeyi indirin
+- git clone https://github.com/vaxen404/password-auth.git
 
-### Compile and Hot-Reload for Development
+2- Adım: Frontend tarafını çalıştırın
+- Proje ana klasöründe terminale "npm install" yazın, ardından "npm run dev" ile başlatın.
 
-```sh
-pnpm dev
-```
+3- Adım: Backend tarafını çalıştırın
+- Backend klasörüne girin, terminale "npm install" yazın ve "node server.js" ile sunucuyu başlatın.
 
-### Compile and Minify for Production
+## Klasör Yapısı:
 
-```sh
-pnpm build
-```
+- src: Vue bileşenleri ve TypeScript kodları.
+
+- backend: Sunucu dosyaları.
+
+- backend/private: Kullanıcı verileri.
+
+#### Not: Bu proje eğitim amaçlıdır. Şifreler JSON dosyasında düz metin olarak tutulmaktadır.
